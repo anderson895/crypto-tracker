@@ -6,7 +6,7 @@ app.innerHTML = `
   <div id="coins">Loading...</div>
 `;
 
-const API_URL = "http://127.0.0.1:5000/api/prices";
+const API_URL = "/api/prices"; // <- use relative URL
 const coinsDiv = document.getElementById("coins");
 
 async function fetchPrices() {
@@ -49,4 +49,4 @@ function displayCoins(coins) {
 fetchPrices();
 
 // Refresh every 10 seconds
-setInterval(fetchPrices, 10000);
+setInterval(fetchPrices, 2000);
