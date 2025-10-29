@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+#coins {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.coin {
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.coin.up {
+  background-color: #1e4620;
+  box-shadow: 0 0 10px #2ecc71;
+}
+
+.coin.down {
+  background-color: #4a1717;
+  box-shadow: 0 0 10px #e74c3c;
+}
+
+.coin.same {
+  background-color: #333;
+}
+
+.coin.new {
+  background-color: #555;
+}
+
+/* Coin icon styling */
+.coin-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white; /* fallback if icon fails */
+  padding: 5px;
+}
