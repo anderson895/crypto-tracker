@@ -1,11 +1,3 @@
 {
-  "version": 2,
-  "projects": {
-    "frontend": {
-      "root": "frontend"
-    },
-    "backend": {
-      "root": "backend"
-    }
-  }
+  "version": 2
 }
