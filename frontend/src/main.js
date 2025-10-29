@@ -6,7 +6,7 @@ app.innerHTML = `
   <div id="coins">Loading...</div>
 `;
 
-const API_URL = "/api/prices"; // <- use relative URL
+const API_URL = "./api/prices"; // <- use relative URL
 const coinsDiv = document.getElementById("coins");
 
 async function fetchPrices() {
