@@ -6,7 +6,8 @@ app.innerHTML = `
   <div id="coins">Loading...</div>
 `;
 
-const API_URL = "http://127.0.0.1:5000/api/prices";
+// const API_URL = "http://127.0.0.1:5000/api/prices";
+const API_URL = "https://crypto-backend-eight-bay.vercel.app/api/prices";
 const coinsDiv = document.getElementById("coins");
 
 async function fetchPrices() {
