@@ -6,7 +6,7 @@ app.innerHTML = `
   <div id="coins">Loading...</div>
 `;
 
-const API_URL = "./api/prices"; // <- use relative URL
+const API_URL = "/api/prices"; // works on Vercel
 const coinsDiv = document.getElementById("coins");
 
 async function fetchPrices() {
@@ -21,7 +21,7 @@ async function fetchPrices() {
 }
 
 function displayCoins(coins) {
-  coinsDiv.innerHTML = ""; // Clear old content
+  coinsDiv.innerHTML = "";
 
   coins.forEach((coin) => {
     const div = document.createElement("div");
@@ -49,4 +49,4 @@ function displayCoins(coins) {
 fetchPrices();
 
 // Refresh every 10 seconds
-setInterval(fetchPrices, 2000);
+setInterval(fetchPrices, 10000);
